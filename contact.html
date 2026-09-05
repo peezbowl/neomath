@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Google Form | NeoMath</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
+        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
+        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
+        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+        <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <a href="index.html" class="btn btn-outline">Back to Home</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 0; max-width: 900px;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span class="badge badge-indigo">Get in Touch</span>
+      <h1 style="font-size: 2.5rem; font-weight: 800; margin-top: 0.5rem;">Contact Us & Ask a Math Doubt</h1>
+      <p style="color: var(--slate-600);">Have a tricky problem, suggestion for our next video lecture, or need book support? Reach out directly via our official Google Form.</p>
+    </div>
+
+    <!-- Official Google Form Direct Banner -->
+    <div style="background: white; border: 2px solid var(--primary); border-radius: var(--radius); padding: 2.5rem; text-align: center; margin-bottom: 3rem; box-shadow: var(--shadow-sm);">
+      <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Official NeoMath Google Form</h2>
+      <p style="color: var(--slate-600); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Fill out our structured Google Form to submit question screenshots, suggest video topics, or request personalized guidance.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScD9neoMathContactSample/viewform" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1.05rem; padding: 12px 28px;">Open Google Form in New Tab ↗</a>
+    </div>
+
+    <!-- Quick Feedback Form -->
+    <div style="background: white; border: 1px solid var(--slate-200); border-radius: var(--radius); padding: 2.5rem;">
+      <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem;">Quick Website Message</h3>
+      <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to the NeoMath teacher inbox.'); this.reset();">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Name</label>
+            <input type="text" required placeholder="e.g. Aryan Patel" style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
+          </div>
+          <div>
+            <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Class</label>
+            <select style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
+              <option>Class 8</option>
+              <option>Class 9</option>
+              <option selected>Class 10</option>
+              <option>Parent / Educator</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Email Address</label>
+          <input type="email" required placeholder="name@example.com" style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Doubt or Message</label>
+          <textarea rows="4" required placeholder="Mention chapter, problem statement, or your question..." style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

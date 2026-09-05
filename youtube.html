@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Lessons | NeoMath</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/videos.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
+        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
+        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
+        <li><a href="youtube.html" class="nav-link active">YouTube</a></li>
+        <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://youtube.com/@NeoMathLearning" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 0;">
+    <div style="background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%); color: white; border-radius: var(--radius); padding: 2.5rem; margin-bottom: 3rem;">
+      <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Official Video Masterclasses</span>
+      <h1 style="font-size: 2.5rem; font-weight: 800; margin: 0.5rem 0 1rem;">NeoMath YouTube Channel</h1>
+      <p style="max-width: 700px; opacity: 0.95; font-size: 1.1rem; margin-bottom: 1.5rem;">Visual theorem proofs, full-chapter one-shot revisions, board exam guaranteed questions, and Vedic speed math tricks.</p>
+      <a href="https://youtube.com/@NeoMathLearning" target="_blank" rel="noopener" class="btn" style="background: white; color: #991b1b; font-weight: 700;">▶ Visit Official Channel</a>
+    </div>
+
+    <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 1.5rem;">All Video Masterclasses</h2>
+    <div class="class-cards-grid" id="yt-videos-list"></div>
+  </main>
+
+  <script>
+    const container = document.getElementById('yt-videos-list');
+    if (window.NEOMATH_VIDEOS && container) {
+      container.innerHTML = window.NEOMATH_VIDEOS.allVideos.map(v => `
+        <div class="class-card">
+          <div style="position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; height: 180px; background: #000;">
+            <img src="${v.thumbnailUrl}" alt="${v.title}" style="width: 100%; height: 100%; object-fit: cover;">
+            <span style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.85); color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">${v.duration}</span>
+            <span class="badge badge-indigo" style="position: absolute; top: 8px; left: 8px;">Class ${v.grade}</span>
+          </div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">${v.title}</h3>
+          <p style="color: var(--slate-600); font-size: 0.9rem; margin-bottom: 1.25rem; flex: 1;">${v.description}</p>
+          <a href="${v.youtubeUrl}" target="_blank" rel="noopener" class="btn btn-primary">Watch Lecture ▶</a>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

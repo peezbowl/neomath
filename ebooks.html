@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics E-Books on Google Play | NeoMath</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/ebooks.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
+        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
+        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
+        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+        <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+        <li><a href="ebooks.html" class="nav-link active">E-Books</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://play.google.com/store/books" target="_blank" rel="noopener" class="btn btn-primary">Google Play Books Store</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 0;">
+    <div style="margin-bottom: 3rem;">
+      <span class="badge badge-indigo">Google Play Books Store</span>
+      <h1 style="font-size: 2.5rem; font-weight: 800; margin-top: 0.5rem;">Official NeoMath E-Books</h1>
+      <p style="color: var(--slate-600); max-width: 750px;">Handcrafted mathematics books authored by Er. Rajesh V. Sharma. Instant reading on phone, tablet, or web browser through the official Google Play Books app.</p>
+    </div>
+
+    <div class="ebooks-grid" id="ebooks-grid-full"></div>
+  </main>
+
+  <script>
+    const grid = document.getElementById('ebooks-grid-full');
+    if (window.NEOMATH_EBOOKS && grid) {
+      grid.innerHTML = window.NEOMATH_EBOOKS.map(b => `
+        <div class="ebook-card">
+          <div class="ebook-cover" style="background: linear-gradient(135deg, #3730a3 0%, #0f172a 100%);">
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">${b.tag}</span>
+            <h2 style="font-size: 1.4rem; font-weight: 800; margin: 1rem 0 0.5rem;">${b.title}</h2>
+            <p style="font-size: 0.85rem; opacity: 0.9;">${b.gradeTarget} • ${b.pages} Pages</p>
+          </div>
+          <div class="ebook-body">
+            <div style="margin-bottom: 1.25rem;">
+              <p style="color: var(--slate-600); font-size: 0.9rem; margin-bottom: 1rem;">${b.description}</p>
+              <ul style="list-style: none; font-size: 0.85rem; color: var(--slate-700); display: flex; flex-direction: column; gap: 6px;">
+                ${b.highlights.slice(0, 3).map(h => `<li>✓ ${h}</li>`).join('')}
+              </ul>
+            </div>
+            <div style="border-top: 1px solid var(--slate-200); padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span style="font-size: 1.4rem; font-weight: 800; color: var(--slate-900);">${b.discountedPrice}</span>
+                <span style="text-decoration: line-through; color: var(--slate-400); font-size: 0.9rem; margin-left: 6px;">${b.originalPrice}</span>
+              </div>
+              <a href="${b.playStoreUrl}" target="_blank" rel="noopener" class="btn btn-playstore">Read on Play Books ↗</a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

@@ -1,27 +1,50 @@
-# NeoMath.in - GitHub Pages Deployment Package
+# NeoMath - Class 8–10 Mathematics Learning Portal
+**GitHub Pages Ready Deployment Package**
 
-Congratulations! This ZIP contains the complete static website files for **NeoMath.in**.
+A static, responsive mathematics website designed for Class 8, Class 9, and Class 10 students. Built with clear separation between content (data/) and UI structure.
 
-## 🚀 How to Host on GitHub Pages (Step-by-Step)
+## 📁 Directory Structure
+```
+NeoMath/
+├── index.html          # Homepage with class quick-jump & overview
+├── classes.html        # Unified Grade Portal (Class 8, 9, 10) with Chapters, Videos, Resources tabs
+├── youtube.html        # Dedicated YouTube video masterclasses & playlists
+├── blogs.html          # Mathematical strategy blogs & study articles
+├── blog-single.html    # Dedicated sample blog post reader
+├── ebooks.html         # E-Books showcase with Google Play Books redirect links
+├── contact.html        # Contact Us page with Google Form integration
+│
+├── css/
+│   └── style.css       # Pure, responsive modern CSS styling
+│
+├── js/
+│   └── main.js         # Navigation, tab switching, and modal controls
+│
+├── data/
+│   ├── class8.js       # Class 8 chapters, videos & resource links
+│   ├── class9.js       # Class 9 chapters, videos & resource links
+│   ├── class10.js      # Class 10 chapters, videos & resource links
+│   ├── videos.js       # Curated YouTube lessons & playlists
+│   ├── blogs.js        # Articles, tips & theorem breakdowns
+│   └── ebooks.js       # Book descriptions, ratings & Google Play links
+│
+└── README.md           # Deployment instructions
+```
 
-### Option 1: Via GitHub Web Interface (Easiest, No Git Required)
-1. Go to [GitHub.com](https://github.com) and click **New Repository**.
-2. Name your repository (e.g. `neomath-website` or `YOUR_USERNAME.github.io`). Set it to **Public**.
-3. Unzip this package and drag & drop all files (`index.html`, `class8.html`, `class9.html`, `class10.html`, `videos.html`, `blogs.html`, `ebooks.html`, `contact.html`, `style.css`, `data/`, etc.) directly into GitHub.
-4. Commit the changes.
-5. In your repository, click **Settings** → **Pages** (in the left sidebar).
-6. Under **Build and deployment** → **Source**, select **Deploy from a branch**.
-7. Under **Branch**, select `main` (or `master`) and folder `/ (root)`, then click **Save**.
-8. In 60 seconds, your site is live at `https://YOUR_USERNAME.github.io/neomath-website/`!
+## 🚀 How to Host on GitHub Pages in 3 Minutes
 
-### Option 2: Custom Domain `neomath.in`
-- In GitHub Pages settings, enter `neomath.in` in the **Custom domain** field.
-- In your domain DNS registrar (GoDaddy, Namecheap, Cloudflare, etc.):
-  - Add an `A` record pointing to GitHub Pages IPs: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-  - Add a `CNAME` record for `www` pointing to `YOUR_USERNAME.github.io`
+1. **Create a new repository** on GitHub (e.g., `neomath`).
+2. **Upload all the files** from this package maintaining the directory structure (`index.html`, `css/`, `js/`, `data/`).
+3. In your GitHub repository, go to **Settings** -> **Pages**.
+4. Under **Branch**, select `main` (or `master`) and folder `/(root)`.
+5. Click **Save**.
+6. Within 60 seconds, your website will be live at:
+   `https://<your-github-username>.github.io/neomath/`
 
-## 📝 How to Update Content Regularly Without Coding
-- **Add a YouTube Video**: Open `data/videos.js` or `videos.html` and paste the new video title and YouTube ID.
-- **Add an E-Book**: Open `data/ebooks.js` or `ebooks.html` and add your Google Play Books link.
-- **Add a Blog**: Open `data/blogs.js` or `blogs.html` and type your article.
-- **Update Google Form**: Open `contact.html` and change the `iframe src` link.
+## ✏️ Updating Content Regularly (Zero Coding Required!)
+To update any section, you simply edit the corresponding file in `data/`:
+- **Add new Class 10 chapter or worksheet**: edit `data/class10.js`
+- **Add new YouTube video lecture**: edit `data/videos.js`
+- **Publish a new blog post**: edit `data/blogs.js`
+- **Update E-Book pricing or links**: edit `data/ebooks.js`
+- **Update Google Form link**: edit `contact.html`

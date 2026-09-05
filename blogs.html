@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics Blogs & Insights | NeoMath</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/blogs.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
+        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
+        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
+        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+        <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Ask a Doubt</a>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 0;">
+    <div style="margin-bottom: 3rem;">
+      <span class="badge badge-indigo">Articles & Guides</span>
+      <h1 style="font-size: 2.5rem; font-weight: 800; margin-top: 0.5rem;">Mathematics Blogs & Study Blueprints</h1>
+      <p style="color: var(--slate-600); max-width: 750px;">Written by experienced educators to help you dismantle challenging formulas, eliminate calculation traps, and study smart.</p>
+    </div>
+
+    <div class="class-cards-grid" id="blogs-grid"></div>
+  </main>
+
+  <script>
+    const grid = document.getElementById('blogs-grid');
+    if (window.NEOMATH_BLOGS && grid) {
+      grid.innerHTML = window.NEOMATH_BLOGS.map(b => `
+        <div class="class-card">
+          <img src="${b.coverImage}" alt="${b.title}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+          <div class="class-card-header">
+            <span class="badge badge-emerald">${b.category}</span>
+            <span style="font-size: 0.8rem; color: var(--slate-500);">${b.readTime}</span>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">${b.title}</h3>
+          <p style="color: var(--slate-600); font-size: 0.9rem; margin-bottom: 1.5rem; flex: 1;">${b.excerpt}</p>
+          <a href="blog-single.html?id=${b.id}" class="btn btn-primary">Read Full Article →</a>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

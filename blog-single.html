@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demystifying Trigonometric Identities | NeoMath Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/blogs.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
+        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
+        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
+        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+        <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="blogs.html" class="btn btn-outline">← Back to Blogs</a>
+    </div>
+  </header>
+
+  <article class="container" style="max-width: 840px; padding: 4rem 1.5rem;">
+    <a href="blogs.html" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">← Back to all articles</a>
+    <div style="margin: 1.5rem 0;">
+      <span class="badge badge-indigo">Deep Dive</span>
+      <span style="font-size: 0.85rem; color: var(--slate-500); margin-left: 10px;">March 2, 2026 • 6 min read</span>
+    </div>
+    <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem;">Demystifying Trigonometric Identities: The Geometric Proofs You Were Never Shown</h1>
+    <p style="font-size: 1.2rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 2rem;">Why sin²θ + cos²θ = 1 is just the Pythagorean Theorem wearing a trigonometry cloak, and how to derive every identity in under 30 seconds.</p>
+
+    <div style="display: flex; align-items: center; gap: 12px; padding: 1rem 0; border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); margin-bottom: 2.5rem;">
+      <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700;">RS</div>
+      <div>
+        <div style="font-weight: 700;">Er. Rajesh V. Sharma</div>
+        <div style="font-size: 0.85rem; color: var(--slate-500);">Founder & Head Educator, NeoMath</div>
+      </div>
+    </div>
+
+    <div style="font-size: 1.1rem; line-height: 1.8; color: var(--slate-800);">
+      <p style="margin-bottom: 1.5rem;">Every year when Class 10 students reach Chapter 8 (Introduction to Trigonometry), a predictable wave of apprehension sweeps through the classroom. "Sir, how do I know whether to convert into sin and cos, or whether to multiply by conjugate?" The answer lies not in guessing tricks, but in understanding what these functions actually measure.</p>
+
+      <h2 style="font-size: 1.75rem; font-weight: 700; margin: 2rem 0 1rem;">1. The Unit Circle: Where Trig Actually Lives</h2>
+      <p style="margin-bottom: 1.5rem;">Forget about rote mnemonic chants for a second. Imagine a circle with radius exactly 1 centered at the origin (0, 0) on the Cartesian coordinate plane. If you draw a line from the origin at angle θ to the circle, the coordinate of that touching point is simply (cos θ, sin θ).</p>
+
+      <div class="formula-box" style="font-size: 1.1rem; padding: 1rem; border-left: 4px solid var(--primary);">
+        <strong>x² + y² = r² ⇒ (cos θ)² + (sin θ)² = 1² ⇒ sin²θ + cos²θ = 1</strong>
+        <p style="font-size: 0.9rem; color: var(--slate-600); margin-top: 6px;">The fundamental identity is literally just Pythagoras applied to the coordinates of a circle with unit hypotenuse!</p>
+      </div>
+
+      <h2 style="font-size: 1.75rem; font-weight: 700; margin: 2rem 0 1rem;">2. Deriving the Other Two Identities in 5 Seconds</h2>
+      <p style="margin-bottom: 1rem;">You do not need to memorize 1 + tan²θ = sec²θ or 1 + cot²θ = cosec²θ. They are children of the first equation:</p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li style="margin-bottom: 0.5rem;"><strong>Divide throughout by cos²θ:</strong> (sin²θ/cos²θ) + (cos²θ/cos²θ) = 1/cos²θ ⇒ <strong>tan²θ + 1 = sec²θ</strong></li>
+        <li style="margin-bottom: 0.5rem;"><strong>Divide throughout by sin²θ:</strong> (sin²θ/sin²θ) + (cos²θ/sin²θ) = 1/sin²θ ⇒ <strong>1 + cot²θ = cosec²θ</strong></li>
+      </ul>
+
+      <div style="background: var(--accent-light); border: 1px solid #a7f3d0; border-radius: var(--radius-sm); padding: 1.25rem; margin: 2rem 0;">
+        <strong style="color: var(--accent);">💡 Teacher Exam Strategy:</strong>
+        <p style="margin-top: 6px; font-size: 0.95rem; color: #064e3b;">If you ever blank out during a timed test, write sin²θ + cos²θ = 1 at the top of your rough sheet and divide by cos²θ or sin²θ to instantly regenerate the others in 5 seconds.</p>
+      </div>
+    </div>
+  </article>
+</body>
+</html>
