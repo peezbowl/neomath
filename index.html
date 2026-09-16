@@ -1,192 +1,514 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeoMath | Master Mathematics for Class 8, 9 & 10</title>
-  <meta name="description" content="Study materials, syllabus chapters, video masterclasses, formula sheets, blogs, and Google Play books for Class 8-10 Math students.">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="data/class8.js"></script>
-  <script src="data/class9.js"></script>
-  <script src="data/class10.js"></script>
-  <script src="data/videos.js"></script>
-  <script src="data/blogs.js"></script>
-  <script src="data/ebooks.js"></script>
-  <script src="js/main.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeoMath.in — Master Math with Absolute Clarity & Intuition</title>
+    <meta name="description" content="Modern educational mathematics website for Classes 8, 9, and 10 featuring CBSE chapter notes, video lessons, blogs, and e-books." />
+    <meta property="og:title" content="NeoMath.in — Master Math with Absolute Clarity & Intuition" />
+    <meta property="og:description" content="Modern educational mathematics website for Classes 8, 9, and 10 featuring CBSE chapter notes, video lessons, blogs, and e-books." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ==========================================
+         TOP NAVIGATION HEADER
+         ========================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-logo" id="siteLogo">
+          <div class="logo-symbol">π</div>
+          <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+        </a>
 
-  <!-- Top Navigation -->
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand-logo">
-        <span>📐 NeoMath</span>
-        <span class="brand-badge">Grades 8–10</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
-        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
-        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
-        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
-        <li><a href="blogs.html" class="nav-link">Blogs</a></li>
-        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <a href="contact.html" class="btn btn-primary">Ask a Doubt</a>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="badge badge-indigo">Class 8 – 10 Mathematics</span>
-        <h1 class="hero-title">Master Math with <span class="hero-highlight">Absolute Clarity</span> & Intuition.</h1>
-        <p class="hero-lead">Stop memorizing steps blindly. NeoMath bridges textbook theorems with visual geometric proofs, step-by-step video masterclasses, curated question banks, and dedicated e-books on Google Play Books.</p>
-        <div class="hero-actions">
-          <a href="classes.html?class=10" class="btn btn-primary">Explore Class 10 Syllabus</a>
-          <a href="youtube.html" class="btn btn-outline">▶ Watch YouTube Lessons</a>
-          <a href="ebooks.html" class="btn btn-outline">📚 Browse E-Books</a>
-        </div>
-      </div>
-      <div>
-        <div style="background: white; border: 1px solid var(--slate-200); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-md);">
-          <h3 style="margin-bottom: 1rem; color: var(--slate-900);">Why NeoMath?</h3>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
-            <li>✅ <strong>Board-Aligned:</strong> Strict NCERT, CBSE & ICSE syllabus mapping.</li>
-            <li>✅ <strong>Zero Math Anxiety:</strong> Spatial geometry & visual proofs first.</li>
-            <li>✅ <strong>Exam Proven:</strong> 100+ solved previous year board questions.</li>
-            <li>✅ <strong>Authored Books:</strong> Available worldwide on Google Play Books.</li>
+        <!-- Desktop Navigation Menu -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="class8.html" class="nav-link">Class 8</a></li>
+            <li><a href="class9.html" class="nav-link">Class 9</a></li>
+            <li><a href="class10.html" class="nav-link">Class 10</a></li>
+            <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+            <li><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        </nav>
 
-  <!-- Grade Level Fast Selector -->
-  <section class="container" style="padding: 4rem 0;">
-    <h2 style="font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">Select Your Class</h2>
-    <p style="text-align: center; color: var(--slate-600); margin-bottom: 2.5rem;">Access dedicated chapters, video lectures, formula sheets, and practice sets tailored to your grade.</p>
-    
-    <div class="class-cards-grid">
-      <!-- Class 8 -->
-      <div class="class-card">
-        <div class="class-card-header">
-          <span class="badge badge-amber">Class 8</span>
-          <span style="font-size: 0.85rem; color: var(--slate-500);">8 Core Chapters</span>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Foundation & Algebra</h3>
-        <p style="color: var(--slate-600); font-size: 0.95rem; margin-bottom: 1.5rem; flex: 1;">Rational numbers, linear equations in one variable, quadrilaterals, algebraic identities, and 3D mensuration.</p>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="classes.html?class=8&tab=chapters" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Chapters</a>
-          <a href="classes.html?class=8&tab=videos" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Videos</a>
-          <a href="classes.html?class=8&tab=resources" class="btn btn-primary" style="flex: 1; font-size: 0.85rem;">Resources</a>
-        </div>
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
 
-      <!-- Class 9 -->
-      <div class="class-card">
-        <div class="class-card-header">
-          <span class="badge badge-emerald">Class 9</span>
-          <span style="font-size: 0.85rem; color: var(--slate-500);">8 Core Chapters</span>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Pure Geometry & Polynomials</h3>
-        <p style="color: var(--slate-600); font-size: 0.95rem; margin-bottom: 1.5rem; flex: 1;">Number systems, factor theorem, deductive geometry proofs across triangles, circles, and Heron's formula.</p>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="classes.html?class=9&tab=chapters" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Chapters</a>
-          <a href="classes.html?class=9&tab=videos" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Videos</a>
-          <a href="classes.html?class=9&tab=resources" class="btn btn-primary" style="flex: 1; font-size: 0.85rem;">Resources</a>
-        </div>
+      <!-- Mobile Dropdown Drawer -->
+      <div class="mobile-drawer" id="mobileNavDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link active">Home <span>→</span></a></li>
+          <li><a href="class8.html" class="mobile-nav-link">Class 8 Mathematics <span>→</span></a></li>
+          <li><a href="class9.html" class="mobile-nav-link">Class 9 Mathematics <span>→</span></a></li>
+          <li><a href="class10.html" class="mobile-nav-link">Class 10 Mathematics <span>→</span></a></li>
+          <li><a href="youtube.html" class="mobile-nav-link">YouTube Video Classes <span>→</span></a></li>
+          <li><a href="blogs.html" class="mobile-nav-link">Math Blogs & Tips <span>→</span></a></li>
+          <li><a href="ebooks.html" class="mobile-nav-link">Revision E-Books (PDF) <span>→</span></a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact Teacher / Ask Doubts <span>→</span></a></li>
+        </ul>
       </div>
+    </header>
 
-      <!-- Class 10 -->
-      <div class="class-card" style="border-color: var(--primary);">
-        <div class="class-card-header">
-          <span class="badge badge-indigo">Class 10 (Board Exam)</span>
-          <span style="font-size: 0.85rem; color: var(--slate-500);">13 Chapters</span>
-        </div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Board Exam Mastery</h3>
-        <p style="color: var(--slate-600); font-size: 0.95rem; margin-bottom: 1.5rem; flex: 1;">Trigonometry, quadratic equations, arithmetic progressions, coordinate geometry, surface areas & 100/100 score blueprint.</p>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="classes.html?class=10&tab=chapters" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Chapters</a>
-          <a href="classes.html?class=10&tab=videos" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;">Videos</a>
-          <a href="classes.html?class=10&tab=resources" class="btn btn-primary" style="flex: 1; font-size: 0.85rem;">Resources</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Google Play Books Spotlight -->
-  <section style="background: white; border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200); padding: 4rem 0;">
-    <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
-        <div>
-          <span class="badge badge-indigo">Published Books</span>
-          <h2 style="font-size: 2rem; font-weight: 800; margin-top: 0.5rem;">Official NeoMath E-Books on Google Play</h2>
-          <p style="color: var(--slate-600);">Structured guides with chapter-by-chapter problem sets, visual proofs, and verified marking rubrics.</p>
-        </div>
-        <a href="ebooks.html" class="btn btn-outline">View All E-Books →</a>
-      </div>
-      <div class="ebooks-grid" id="homepage-ebooks-preview">
-        <!-- Renders via JS or static cards -->
-        <div class="ebook-card">
-          <div class="ebook-cover">
-            <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Bestseller</span>
-            <h3 style="font-size: 1.3rem; margin: 1rem 0 0.5rem;">Class 10 Math Score Booster</h3>
-            <p style="font-size: 0.85rem; opacity: 0.9;">284 Pages • 300+ Solved Questions</p>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <main>
+      <section class="hero-section" id="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+          <!-- Teacher can edit this badge label -->
+          <div class="badge-pill">
+            <span>✨</span> CBSE Classes 8, 9 & 10 Mathematics Portal
           </div>
-          <div class="ebook-body">
-            <p style="color: var(--slate-600); font-size: 0.9rem; margin-bottom: 1.25rem;">Includes 15 guaranteed board theorems with word-for-word proof templates and 5 timed mock papers.</p>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <span style="font-size: 1.25rem; font-weight: 800; color: var(--slate-900);">₹249</span>
-                <span style="text-decoration: line-through; color: var(--slate-400); font-size: 0.9rem; margin-left: 6px;">₹499</span>
-              </div>
-              <a href="https://play.google.com/store/books" target="_blank" rel="noopener" class="btn btn-playstore">Get on Google Play</a>
+
+          <h1 class="hero-title">
+            Master Math with <br />
+            <span class="text-gradient">Absolute Clarity & Intuition.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Welcome to <strong>NeoMath.in</strong>, your dedicated learning companion built by an experienced mathematics teacher. 
+            Simplify complex formulas, visualize geometry, and score 100/100 through structured chapter notes, curated video lessons, and revision e-books.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#classes" class="btn btn-primary">
+              Choose Your Class
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="youtube.html" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Watch Video Lectures
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number text-gradient">39+</div>
+              <div class="stat-label">CBSE Chapters Covered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number text-gradient">100%</div>
+              <div class="stat-label">NCERT Solved Concepts</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number text-gradient">Free</div>
+              <div class="stat-label">PDF Notes & Formula Sheets</div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3 class="footer-title">📐 NeoMath</h3>
-        <p style="line-height: 1.7; margin-bottom: 1.5rem;">Empowering Class 8, 9, and 10 students across CBSE, ICSE & State Boards to conquer mathematics with intuition, step-by-step logic, and joy.</p>
-        <p style="font-size: 0.85rem;">Curated by Er. Rajesh V. Sharma (M.Sc. Math, B.Ed.)</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Quick Pages</h4>
-        <ul class="footer-links">
-          <li><a href="classes.html?class=8">Class 8 Mathematics</a></li>
-          <li><a href="classes.html?class=9">Class 9 Mathematics</a></li>
-          <li><a href="classes.html?class=10">Class 10 Board Math</a></li>
-          <li><a href="youtube.html">YouTube Video Lessons</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer-title">Resources</h4>
-        <ul class="footer-links">
-          <li><a href="blogs.html">Math Study Blogs</a></li>
-          <li><a href="ebooks.html">Google Play E-Books</a></li>
-          <li><a href="contact.html">Google Form Contact</a></li>
-          <li><a href="classes.html?class=10&tab=resources">Formula Sheets</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer-title">Connect</h4>
-        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Have a question or chapter request? Drop us a note via our official Google Form.</p>
-        <a href="contact.html" class="btn btn-primary" style="font-size: 0.85rem; width: 100%;">Open Contact Form</a>
-      </div>
-    </div>
-    <div class="container" style="border-top: 1px solid var(--slate-800); padding-top: 2rem; text-align: center; font-size: 0.85rem;">
-      <p>© 2026 NeoMath. Static website designed for effortless GitHub Pages deployment.</p>
-    </div>
-  </footer>
+      <!-- ==========================================
+           CLASS SELECTION CARDS
+           ========================================== -->
+      <section class="section" id="classes">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Targeted Learning</div>
+            <h2 class="section-title">Select Your Class</h2>
+            <p class="section-desc">Handcrafted chapter notes, NCERT exemplar problem explanations, and video tutorials aligned with the latest CBSE syllabus.</p>
+          </div>
 
-</body>
+          <div class="class-grid">
+            <!-- Class 8 Card -->
+            <div class="class-card" id="class8Card">
+              <span class="class-badge badge-c8">CBSE Class 8</span>
+              <h3 class="class-card-title">Class 8 Mathematics</h3>
+              <p class="class-card-desc">
+                Build an rock-solid foundation for higher math. Master Rational Numbers, Linear Equations, Mensuration, and Factorisation with intuitive graphical intuition.
+              </p>
+              <ul class="class-card-topics">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  13 Complete CBSE Chapters
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Step-by-step NCERT Solutions
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Comprehensive Formula Handbooks
+                </li>
+              </ul>
+              <div class="class-card-footer">
+                <a href="class8.html" class="btn btn-primary btn-sm">
+                  Explore Class 8 →
+                </a>
+                <a href="ebooks.html#class8" class="nav-link" style="font-size: 0.85rem;">Download PDF</a>
+              </div>
+            </div>
+
+            <!-- Class 9 Card -->
+            <div class="class-card" id="class9Card">
+              <span class="class-badge badge-c9">CBSE Class 9</span>
+              <h3 class="class-card-title">Class 9 Mathematics</h3>
+              <p class="class-card-desc">
+                Conquer high-school mathematics concepts. Deep dive into Real Number Systems, Polynomials, Coordinate Geometry, Triangles, and Circles.
+              </p>
+              <ul class="class-card-topics">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  12 Full CBSE Syllabus Modules
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Geometry Theorem Proofs Made Simple
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Polynomial Identity Derivations
+                </li>
+              </ul>
+              <div class="class-card-footer">
+                <a href="class9.html" class="btn btn-primary btn-sm">
+                  Explore Class 9 →
+                </a>
+                <a href="ebooks.html#class9" class="nav-link" style="font-size: 0.85rem;">Download PDF</a>
+              </div>
+            </div>
+
+            <!-- Class 10 Card -->
+            <div class="class-card" id="class10Card">
+              <span class="class-badge badge-c10">CBSE Class 10 Board</span>
+              <h3 class="class-card-title">Class 10 Mathematics</h3>
+              <p class="class-card-desc">
+                Your pathway to a 100/100 Board Examination score. Master Trigonometry, Quadratic Equations, Arithmetic Progressions, and Surface Areas.
+              </p>
+              <ul class="class-card-topics">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  14 Board Exam Chapters
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Trigonometry Tricks & Board PYQs
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Formula Cheat Sheet & Blueprint
+                </li>
+              </ul>
+              <div class="class-card-footer">
+                <a href="class10.html" class="btn btn-primary btn-sm">
+                  Explore Class 10 →
+                </a>
+                <a href="ebooks.html#class10" class="nav-link" style="font-size: 0.85rem;">Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           LATEST YOUTUBE VIDEOS SECTION
+           ========================================== -->
+      <section class="section" id="videos" style="background: rgba(13, 21, 39, 0.4); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark);">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Visual Lessons</div>
+            <h2 class="section-title">Latest YouTube Video Lessons</h2>
+            <p class="section-desc">Watch crystal-clear concept breakdowns, NCERT solutions, and speed calculation methods directly from our channel.</p>
+          </div>
+
+          <div class="video-grid">
+            <!-- Video 1: Class 10 -->
+            <!-- TEACHER: Replace href with your actual YouTube video link -->
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="video-thumbnail-wrap">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);">
+                  <span style="font-size: 3rem; color: rgba(0, 242, 254, 0.3); font-weight: 800;">sin²θ + cos²θ</span>
+                </div>
+                <div class="video-play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                </div>
+                <span class="video-duration">18:42</span>
+              </a>
+              <div class="video-content">
+                <div class="video-meta">
+                  <span class="video-class-pill badge-c10">Class 10</span>
+                  <span class="video-chapter-name">Trigonometry</span>
+                </div>
+                <h3 class="video-title">Trigonometric Identities Made Intuitive: Proof & Fast Problem Solving</h3>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="margin-top: auto;">
+                  Watch on YouTube ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 2: Class 9 -->
+            <!-- TEACHER: Replace href with your actual YouTube video link -->
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="video-thumbnail-wrap">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);">
+                  <span style="font-size: 3rem; color: rgba(52, 211, 153, 0.3); font-weight: 800;">(x+a)(x+b)</span>
+                </div>
+                <div class="video-play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                </div>
+                <span class="video-duration">22:15</span>
+              </a>
+              <div class="video-content">
+                <div class="video-meta">
+                  <span class="video-class-pill badge-c9">Class 9</span>
+                  <span class="video-chapter-name">Polynomials</span>
+                </div>
+                <h3 class="video-title">Polynomials Chapter 2: Factor Theorem & Algebraic Identities Explained</h3>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="margin-top: auto;">
+                  Watch on YouTube ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 3: Class 8 -->
+            <!-- TEACHER: Replace href with your actual YouTube video link -->
+            <div class="video-card">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="video-thumbnail-wrap">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #083344 0%, #0f172a 100%);">
+                  <span style="font-size: 3rem; color: rgba(0, 242, 254, 0.3); font-weight: 800;">p/q (q≠0)</span>
+                </div>
+                <div class="video-play-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                </div>
+                <span class="video-duration">15:30</span>
+              </a>
+              <div class="video-content">
+                <div class="video-meta">
+                  <span class="video-class-pill badge-c8">Class 8</span>
+                  <span class="video-chapter-name">Rational Numbers</span>
+                </div>
+                <h3 class="video-title">Rational Numbers Properties in 15 Minutes: Closure, Associative & Distributive</h3>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="margin-top: auto;">
+                  Watch on YouTube ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="youtube.html" class="btn btn-primary">
+              View All Video Lessons for Classes 8, 9 & 10 →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           RECENT BLOGS SECTION
+           ========================================== -->
+      <section class="section" id="blogs">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Insights & Strategies</div>
+            <h2 class="section-title">Recent Math Blogs & Study Guides</h2>
+            <p class="section-desc">Practical tips, exam preparation techniques, and conceptual breakdowns written specifically for school students.</p>
+          </div>
+
+          <div class="blogs-grid">
+            <!-- Blog 1 -->
+            <div class="blog-card">
+              <div class="blog-meta-top">
+                <span class="blog-category-badge">Exam Preparation</span>
+                <span class="blog-read-time">5 min read</span>
+              </div>
+              <h3 class="blog-title">How to Master Trigonometric Identities Without Memorizing Formulas</h3>
+              <p class="blog-excerpt">
+                Understand the geometric meaning of the unit circle so you never forget sin²θ + cos²θ = 1 or sec²θ - tan²θ = 1 in your CBSE Class 10 board exams.
+              </p>
+              <a href="blog-example.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Read Full Article →</a>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog-card">
+              <div class="blog-meta-top">
+                <span class="blog-category-badge">Concept Clarified</span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+              <h3 class="blog-title">Why Division by Zero is Undefined: A Visual Explanation for Students</h3>
+              <p class="blog-excerpt">
+                A simple, intuitive way to understand what happens as denominators approach zero, and why calculators give an error instead of infinity.
+              </p>
+              <a href="blog-example.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Read Full Article →</a>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="blog-card">
+              <div class="blog-meta-top">
+                <span class="blog-category-badge">Study Tips</span>
+                <span class="blog-read-time">4 min read</span>
+              </div>
+              <h3 class="blog-title">5 Common Calculation Mistakes in Class 8 & 9 and How to Avoid Them</h3>
+              <p class="blog-excerpt">
+                From sign flips in negative brackets to misapplying the distributive property—learn the top slip-ups and effective double-checking habits.
+              </p>
+              <a href="blog-example.html" class="btn btn-secondary btn-sm" style="margin-top: auto;">Read Full Article →</a>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="blogs.html" class="btn btn-secondary">
+              Browse All Blog Articles →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           AVAILABLE E-BOOKS SECTION
+           ========================================== -->
+      <section class="section" id="ebooks" style="background: rgba(13, 21, 39, 0.4); border-top: 1px solid var(--border-dark);">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Free Digital Resources</div>
+            <h2 class="section-title">Mathematics Revision E-Books</h2>
+            <p class="section-desc">Download comprehensive PDF formula handbooks, summary notes, and chapter-wise question banks for offline revision.</p>
+          </div>
+
+          <div class="ebooks-grid">
+            <!-- Book 1: Class 10 -->
+            <div class="ebook-card">
+              <div class="ebook-cover-graphic">
+                <span class="ebook-cover-badge">CLASS 10</span>
+                <div>
+                  <div class="ebook-cover-title">Board Exam Formula Bible</div>
+                  <div class="ebook-cover-subtitle">Complete 14 Chapters</div>
+                </div>
+                <div style="font-size: 0.75rem; color: #94a3b8;">NeoMath.in Publication</div>
+              </div>
+              <h3 class="ebook-title">Class 10 Math Formula & Revision Guide</h3>
+              <p class="ebook-desc">All formulas, theorem proofs, and standard question blueprints compiled into a high-yield 35-page PDF.</p>
+              <div class="ebook-specs">
+                <span>📄 PDF (4.2 MB)</span>
+                <span>⭐ NCERT & CBSE</span>
+              </div>
+              <!-- TEACHER: Replace href with your actual PDF link or Google Drive link -->
+              <a href="ebooks.html#class10" class="btn btn-primary btn-sm">Download E-Book (PDF)</a>
+            </div>
+
+            <!-- Book 2: Class 9 -->
+            <div class="ebook-card">
+              <div class="ebook-cover-graphic" style="background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);">
+                <span class="ebook-cover-badge" style="background: #34d399; color: #022c22;">CLASS 9</span>
+                <div>
+                  <div class="ebook-cover-title">Concept Handbook & Geometry</div>
+                  <div class="ebook-cover-subtitle">12 CBSE Chapters</div>
+                </div>
+                <div style="font-size: 0.75rem; color: #94a3b8;">NeoMath.in Publication</div>
+              </div>
+              <h3 class="ebook-title">Class 9 Math Foundation Handbook</h3>
+              <p class="ebook-desc">Clear proofs for geometry theorems, polynomial algebraic identities, and coordinate geometry fundamentals.</p>
+              <div class="ebook-specs">
+                <span>📄 PDF (3.8 MB)</span>
+                <span>⭐ NCERT & CBSE</span>
+              </div>
+              <!-- TEACHER: Replace href with your actual PDF link -->
+              <a href="ebooks.html#class9" class="btn btn-primary btn-sm">Download E-Book (PDF)</a>
+            </div>
+
+            <!-- Book 3: Class 8 -->
+            <div class="ebook-card">
+              <div class="ebook-cover-graphic" style="background: linear-gradient(135deg, #075985 0%, #0f172a 100%);">
+                <span class="ebook-cover-badge" style="background: var(--cyan); color: #070c18;">CLASS 8</span>
+                <div>
+                  <div class="ebook-cover-title">Quick Revision & Solved Notes</div>
+                  <div class="ebook-cover-subtitle">13 CBSE Chapters</div>
+                </div>
+                <div style="font-size: 0.75rem; color: #94a3b8;">NeoMath.in Publication</div>
+              </div>
+              <h3 class="ebook-title">Class 8 Math Quick Revision Notes</h3>
+              <p class="ebook-desc">Concise notes for Rational Numbers, Linear Equations, Mensuration formulas, and Factorisation tricks.</p>
+              <div class="ebook-specs">
+                <span>📄 PDF (3.1 MB)</span>
+                <span>⭐ NCERT & CBSE</span>
+              </div>
+              <!-- TEACHER: Replace href with your actual PDF link -->
+              <a href="ebooks.html#class8" class="btn btn-primary btn-sm">Download E-Book (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: Brand Info -->
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              <div class="logo-symbol">π</div>
+              <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+            </a>
+            <p>
+              An educational mathematics portal for students of CBSE Classes 8, 9, and 10. 
+              Built with clarity, intuition, and love for mathematical thinking.
+            </p>
+            <div style="color: var(--text-dim); font-size: 0.85rem;">
+              Curated by an experienced CBSE Mathematics Teacher.
+            </div>
+          </div>
+
+          <!-- Column 2: Classes -->
+          <div class="footer-col">
+            <h4>Classes</h4>
+            <ul class="footer-links">
+              <li><a href="class8.html">Class 8 Mathematics</a></li>
+              <li><a href="class9.html">Class 9 Mathematics</a></li>
+              <li><a href="class10.html">Class 10 Mathematics</a></li>
+              <li><a href="class8-rational-numbers.html">Sample Notes: Class 8</a></li>
+              <li><a href="class9-polynomials.html">Sample Notes: Class 9</a></li>
+              <li><a href="class10-real-numbers.html">Sample Notes: Class 10</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Resources -->
+          <div class="footer-col">
+            <h4>Learning Hub</h4>
+            <ul class="footer-links">
+              <li><a href="youtube.html">YouTube Video Lessons</a></li>
+              <li><a href="blogs.html">Math Study Blogs</a></li>
+              <li><a href="blog-example.html">Trigonometry Guide</a></li>
+              <li><a href="ebooks.html">Revision E-Books (PDF)</a></li>
+              <li><a href="contact.html">Ask a Doubt</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact & Social -->
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul class="footer-links">
+              <!-- TEACHER: Update email and channel links below -->
+              <li><a href="mailto:contact@neomath.in">Email: contact@neomath.in</a></li>
+              <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube Channel ↗</a></li>
+              <li><a href="contact.html">Google Form for Doubts</a></li>
+              <li><a href="contact.html">Teacher Q&A Session</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 NeoMath.in. All rights reserved. Free educational resource for students.</div>
+          <div>Designed for GitHub Pages static hosting. Fast, clean & mobile responsive.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

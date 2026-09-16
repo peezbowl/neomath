@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 10 Chapter 1: Real Numbers — CBSE Board Notes & Proofs | NeoMath.in</title>
+    <meta name="description" content="CBSE Class 10 Board Chapter 1 Real Numbers notes, Fundamental Theorem of Arithmetic, HCF-LCM formula, and proof that root 3 is irrational." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-symbol">π</div>
+          <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="class8.html" class="nav-link">Class 8</a></li>
+            <li><a href="class9.html" class="nav-link">Class 9</a></li>
+            <li><a href="class10.html" class="nav-link active">Class 10</a></li>
+            <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+            <li><a href="contact.html" class="nav-link nav-cta">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer" id="mobileNavDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+          <li><a href="class8.html" class="mobile-nav-link">Class 8 Mathematics <span>→</span></a></li>
+          <li><a href="class9.html" class="mobile-nav-link">Class 9 Mathematics <span>→</span></a></li>
+          <li><a href="class10.html" class="mobile-nav-link active">Class 10 Mathematics <span>→</span></a></li>
+          <li><a href="youtube.html" class="mobile-nav-link">YouTube Video Classes <span>→</span></a></li>
+          <li><a href="blogs.html" class="mobile-nav-link">Math Blogs & Tips <span>→</span></a></li>
+          <li><a href="ebooks.html" class="mobile-nav-link">Revision E-Books (PDF) <span>→</span></a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact Teacher / Ask Doubts <span>→</span></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- RETURN BUTTON BAR -->
+      <div style="padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <a href="class10.html" class="btn btn-secondary btn-sm">
+          ← Return to Class 10 All Chapters
+        </a>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="ebooks.html#class10" class="btn btn-primary btn-sm">Download Class 10 Board E-Book (PDF) 📥</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Watch Video Lecture ↗</a>
+        </div>
+      </div>
+
+      <!-- READING WRAPPER (Clean light reading surface requested) -->
+      <!-- TEACHER: To create another Class 10 chapter page, copy this file and modify this article block -->
+      <article class="reading-wrapper" id="chapterContent">
+        <header class="reading-header">
+          <div class="reading-breadcrumbs">
+            <a href="index.html">Home</a> / <a href="class10.html">Class 10</a> / <span>Chapter 1: Real Numbers</span>
+          </div>
+          <span class="class-badge badge-c10" style="margin-bottom: 0.8rem;">CBSE Board Exam High-Yield</span>
+          <h1 class="reading-title">Chapter 1: Real Numbers</h1>
+          <p class="reading-subtitle">
+            Fundamental Theorem of Arithmetic, prime factorisation tree, HCF & LCM relations, and rigorous proofs by contradiction for irrational numbers (√2, √3, √5).
+          </p>
+        </header>
+
+        <div class="content-body">
+          <!-- Resource Bar -->
+          <div class="chapter-resources">
+            <!-- TEACHER: Replace with your actual YouTube URL -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="resource-card">
+              <div class="resource-icon icon-red">▶</div>
+              <div class="resource-text">
+                <h4>Board Video Lecture</h4>
+                <p>20-min proof of irrationality (3 marks guarantee)</p>
+              </div>
+            </a>
+            <!-- TEACHER: Replace with your actual E-book link -->
+            <a href="ebooks.html#class10" class="resource-card">
+              <div class="resource-icon icon-blue">📘</div>
+              <div class="resource-text">
+                <h4>Class 10 Formula Bible (PDF)</h4>
+                <p>Complete 14 chapters board blueprint</p>
+              </div>
+            </a>
+            <a href="blogs.html" class="resource-card">
+              <div class="resource-icon icon-purple">💡</div>
+              <div class="resource-text">
+                <h4>Trigonometry Study Guide</h4>
+                <p>How to memorize trig identities easily</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Section 1 -->
+          <h2>1. The Fundamental Theorem of Arithmetic</h2>
+          <p>
+            The Fundamental Theorem of Arithmetic tells us that every composite number can be broken down uniquely into prime numbers, like atomic building blocks:
+          </p>
+          <div class="math-box">
+            <div class="math-box-title">Theorem Statement</div>
+            <p style="font-size: 1.08rem; line-height: 1.6; color: #0f172a; margin: 0;">
+              Every composite number can be expressed (factorised) as a product of primes, and this factorisation is <strong>unique</strong>, apart from the order in which the prime factors occur.
+            </p>
+          </div>
+          <p>
+            In general, for any composite number x: <br />
+            <code>x = p₁ × p₂ × ... × pₙ</code> where p₁, p₂, ... are primes written in ascending order (p₁ ≤ p₂ ≤ ... ≤ pₙ).
+          </p>
+
+          <!-- Section 2: HCF & LCM -->
+          <h2>2. Finding HCF and LCM using Prime Factorisation</h2>
+          <ul>
+            <li>
+              <strong>HCF (Highest Common Factor):</strong> Product of the <em>smallest power</em> of each common prime factor involved in the numbers.
+            </li>
+            <li>
+              <strong>LCM (Least Common Multiple):</strong> Product of the <em>greatest power</em> of each prime factor involved in the numbers.
+            </li>
+          </ul>
+
+          <div class="math-box" style="border-left-color: #0284c7;">
+            <div class="math-box-title">Core CBSE Formula (Valid for Two Positive Integers a and b only)</div>
+            <div class="formula-display">
+              HCF(a, b) × LCM(a, b) = a × b
+            </div>
+            <p style="font-size: 0.88rem; color: #64748b; text-align: center; margin: 0;">
+              ⚠️ Warning: This formula does <strong>NOT</strong> hold true for three numbers (a, b, c)!
+            </p>
+          </div>
+
+          <!-- Section 3: Revisiting Irrational Numbers -->
+          <h2>3. Revisiting Irrational Numbers (Proof by Contradiction)</h2>
+          <p>
+            A real number is called <strong>irrational</strong> if it cannot be written in the form <code>p/q</code>, where p and q are integers and q ≠ 0. 
+            In the Class 10 Board Exam, proving that √2, √3, or √5 is irrational is asked almost every year (3-mark question).
+          </p>
+
+          <div class="math-box" style="background: #fdf2f8; border-left-color: #ec4899;">
+            <div class="math-box-title" style="color: #db2777;">Supporting Theorem (NCERT Theorem 1.3)</div>
+            <p style="margin: 0; color: #831843; font-size: 1rem;">
+              Let <strong>p</strong> be a prime number. If <strong>p divides a²</strong>, then <strong>p divides a</strong>, where a is a positive integer.
+            </p>
+          </div>
+
+          <!-- Proof walkthrough -->
+          <div class="example-box" style="border-color: #cbd5e1; background: #ffffff;">
+            <div class="example-header">
+              <span class="example-tag" style="background: #f3e8ff; color: #6b21a8;">Standard CBSE Board Proof</span>
+              <span style="font-size: 0.85rem; color: #64748b;">Frequently Asked 3-Mark Question</span>
+            </div>
+            <div class="example-question">
+              <strong>Theorem:</strong> Prove that <code>√3</code> is an irrational number.
+            </div>
+            <div class="example-solution">
+              <div class="solution-step">
+                <span class="step-badge">1</span>
+                <div>
+                  <strong>Assumption (Method of Contradiction):</strong> <br />
+                  Let us assume, to the contrary, that <code>√3</code> is a rational number. <br />
+                  Therefore, we can find co-prime integers <strong>a</strong> and <strong>b</strong> (where b ≠ 0 and HCF(a, b) = 1) such that: <br />
+                  <code>√3 = a / b</code>.
+                </div>
+              </div>
+              <div class="solution-step">
+                <span class="step-badge">2</span>
+                <div>
+                  <strong>Squaring both sides:</strong> <br />
+                  <code>b√3 = a</code> <br />
+                  Squaring both sides gives: <code>3b² = a²</code> ... <em>(Equation 1)</em> <br />
+                  This implies that <strong>3 divides a²</strong>. <br />
+                  Therefore, by Theorem 1.3, <strong>3 also divides a</strong>.
+                </div>
+              </div>
+              <div class="solution-step">
+                <span class="step-badge">3</span>
+                <div>
+                  <strong>Substitute a = 3c:</strong> <br />
+                  Since 3 divides a, we can write <code>a = 3c</code> for some integer c. <br />
+                  Substituting into (Equation 1): <br />
+                  <code>3b² = (3c)² = 9c²</code> <br />
+                  Dividing by 3: <code>b² = 3c²</code>. <br />
+                  This means that <strong>3 divides b²</strong>, which implies that <strong>3 divides b</strong>.
+                </div>
+              </div>
+              <div class="solution-step">
+                <span class="step-badge">4</span>
+                <div>
+                  <strong>Arrive at Contradiction:</strong> <br />
+                  From steps 2 and 3, both <strong>a and b have at least 3 as a common factor</strong>. <br />
+                  But this contradicts our initial fact that <em>a and b are co-prime (HCF = 1)</em>! <br />
+                  This contradiction arose because of our incorrect assumption that √3 is rational. <br />
+                  <strong style="color: #0369a1;">Hence, √3 is irrational. (Q.E.D.)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Solved Board Questions -->
+          <h2>4. Solved Board Exam Questions</h2>
+
+          <div class="example-box">
+            <div class="example-header">
+              <span class="example-tag">Board PYQ Example</span>
+              <span style="font-size: 0.85rem; color: #64748b;">HCF-LCM Application</span>
+            </div>
+            <div class="example-question">
+              <strong>Question:</strong> Given that HCF(306, 657) = 9, find LCM(306, 657).
+            </div>
+            <div class="example-solution">
+              <div class="solution-step">
+                <span class="step-badge">1</span>
+                <div>
+                  We know the standard relation: <br />
+                  <code>LCM(a, b) = (a × b) / HCF(a, b)</code>
+                </div>
+              </div>
+              <div class="solution-step">
+                <span class="step-badge">2</span>
+                <div>
+                  Substitute a = 306, b = 657, and HCF = 9: <br />
+                  <code>LCM(306, 657) = (306 × 657) / 9</code> <br />
+                  = 34 × 657 = <strong>22,338</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="example-box">
+            <div class="example-header">
+              <span class="example-tag">Board Short Question (2 Marks)</span>
+              <span style="font-size: 0.85rem; color: #64748b;">Composite Number Check</span>
+            </div>
+            <div class="example-question">
+              <strong>Question:</strong> Explain why <code>7 × 11 × 13 + 13</code> is a composite number.
+            </div>
+            <div class="example-solution">
+              <div class="solution-step">
+                <span class="step-badge">1</span>
+                <div>
+                  Take out the common factor 13: <br />
+                  <code>7 × 11 × 13 + 13 = 13 × (7 × 11 + 1)</code> <br />
+                  = 13 × (77 + 1) = 13 × 78 <br />
+                  = 13 × 13 × 6 = 13² × 2 × 3
+                </div>
+              </div>
+              <div class="solution-step">
+                <span class="step-badge">2</span>
+                <div>
+                  Since the given expression can be factorised as a product of more than two prime factors (2, 3, and 13), by the Fundamental Theorem of Arithmetic, it is a <strong>composite number</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Navigation -->
+          <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <a href="class10.html" class="btn btn-secondary">← Back to Class 10 Chapters</a>
+            <div style="display: flex; gap: 1rem;">
+              <a href="blogs.html" class="btn btn-secondary">Read Math Study Blogs 💡</a>
+              <a href="ebooks.html#class10" class="btn btn-primary">Download Class 10 Board E-Book 📥</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding: 0;">
+          <div>&copy; 2026 NeoMath.in — Class 10 Chapter 1 Notes</div>
+          <div><a href="class10.html">← Return to Class 10</a> | <a href="contact.html">Ask Teacher a Doubt</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

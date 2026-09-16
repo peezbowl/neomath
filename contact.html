@@ -1,74 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us & Google Form | NeoMath</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand-logo"><span>📐 NeoMath</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="classes.html?class=8" class="nav-link">Class 8</a></li>
-        <li><a href="classes.html?class=9" class="nav-link">Class 9</a></li>
-        <li><a href="classes.html?class=10" class="nav-link">Class 10</a></li>
-        <li><a href="youtube.html" class="nav-link">YouTube</a></li>
-        <li><a href="blogs.html" class="nav-link">Blogs</a></li>
-        <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
-        <li><a href="contact.html" class="nav-link active">Contact</a></li>
-      </ul>
-      <a href="index.html" class="btn btn-outline">Back to Home</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Math Teacher & Ask Doubts | NeoMath.in</title>
+    <meta name="description" content="Reach out to the teacher for mathematics doubts, feedback, study tips, or school session inquiries." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-symbol">π</div>
+          <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="class8.html" class="nav-link">Class 8</a></li>
+            <li><a href="class9.html" class="nav-link">Class 9</a></li>
+            <li><a href="class10.html" class="nav-link">Class 10</a></li>
+            <li><a href="youtube.html" class="nav-link">YouTube</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+            <li><a href="ebooks.html" class="nav-link">E-Books</a></li>
+            <li><a href="contact.html" class="nav-link nav-cta active">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer" id="mobileNavDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+          <li><a href="class8.html" class="mobile-nav-link">Class 8 Mathematics <span>→</span></a></li>
+          <li><a href="class9.html" class="mobile-nav-link">Class 9 Mathematics <span>→</span></a></li>
+          <li><a href="class10.html" class="mobile-nav-link">Class 10 Mathematics <span>→</span></a></li>
+          <li><a href="youtube.html" class="mobile-nav-link">YouTube Video Classes <span>→</span></a></li>
+          <li><a href="blogs.html" class="mobile-nav-link">Math Blogs & Tips <span>→</span></a></li>
+          <li><a href="ebooks.html" class="mobile-nav-link">Revision E-Books (PDF) <span>→</span></a></li>
+          <li><a href="contact.html" class="mobile-nav-link active">Contact Teacher / Ask Doubts <span>→</span></a></li>
+        </ul>
+      </div>
+    </header>
 
-  <main class="container" style="padding: 3rem 0; max-width: 900px;">
-    <div style="text-align: center; margin-bottom: 3rem;">
-      <span class="badge badge-indigo">Get in Touch</span>
-      <h1 style="font-size: 2.5rem; font-weight: 800; margin-top: 0.5rem;">Contact Us & Ask a Math Doubt</h1>
-      <p style="color: var(--slate-600);">Have a tricky problem, suggestion for our next video lecture, or need book support? Reach out directly via our official Google Form.</p>
-    </div>
-
-    <!-- Official Google Form Direct Banner -->
-    <div style="background: white; border: 2px solid var(--primary); border-radius: var(--radius); padding: 2.5rem; text-align: center; margin-bottom: 3rem; box-shadow: var(--shadow-sm);">
-      <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Official NeoMath Google Form</h2>
-      <p style="color: var(--slate-600); margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Fill out our structured Google Form to submit question screenshots, suggest video topics, or request personalized guidance.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScD9neoMathContactSample/viewform" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1.05rem; padding: 12px 28px;">Open Google Form in New Tab ↗</a>
-    </div>
-
-    <!-- Quick Feedback Form -->
-    <div style="background: white; border: 1px solid var(--slate-200); border-radius: var(--radius); padding: 2.5rem;">
-      <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem;">Quick Website Message</h3>
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to the NeoMath teacher inbox.'); this.reset();">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-          <div>
-            <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Name</label>
-            <input type="text" required placeholder="e.g. Aryan Patel" style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
+    <main>
+      <!-- Page Hero -->
+      <section class="section" style="padding-top: 4rem; padding-bottom: 2rem; text-align: center;">
+        <div class="container">
+          <div class="badge-pill">
+            <span>💬</span> We Love Questions
           </div>
-          <div>
-            <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Class</label>
-            <select style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
-              <option>Class 8</option>
-              <option>Class 9</option>
-              <option selected>Class 10</option>
-              <option>Parent / Educator</option>
-            </select>
+          <h1 class="hero-title">
+            Get in Touch with Your <span class="text-gradient">Math Teacher</span>
+          </h1>
+          <p class="hero-lead" style="max-width: 650px; margin: 0 auto;">
+            Have a question about a difficult geometry theorem, need guidance for your board exams, or want to suggest a new video topic? Reach out below!
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Content Grid -->
+      <section class="section" style="padding-top: 1rem;">
+        <div class="container">
+          <div class="contact-grid">
+
+            <!-- Left: Direct Contact Information -->
+            <div class="contact-info-panel">
+              <!-- Friendly Note for Students -->
+              <div class="teacher-note-card">
+                <div class="teacher-avatar">👨‍🏫</div>
+                <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 0.5rem;">A Message From Your Teacher</h3>
+                <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                  "Mathematics is not about memorizing mysterious rules or dreading exams. It is simply the art of logical pattern discovery. Never hesitate to ask a question, no matter how small or basic it might seem. Every great mathematician began by asking why!"
+                </p>
+              </div>
+
+              <!-- Channel Details -->
+              <!-- TEACHER: Update your email and social handles below -->
+              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <div class="info-item">
+                  <div class="info-icon">✉️</div>
+                  <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 0.2rem;">Email Doubts & Questions</h4>
+                    <a href="mailto:contact@neomath.in" style="color: var(--cyan); font-size: 0.95rem; text-decoration: none;">contact@neomath.in</a>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0.2rem 0 0;">(Expect replies within 24 to 48 hours on weekdays)</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">▶️</div>
+                  <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 0.2rem;">YouTube Video Classroom</h4>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" style="color: var(--cyan); font-size: 0.95rem; text-decoration: none;">youtube.com/@NeoMathIndia ↗</a>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0.2rem 0 0;">Comment under any video for priority chapter requests</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">📍</div>
+                  <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 0.2rem;">Curriculum Focus</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">CBSE & State Boards (Classes 8, 9 & 10 Mathematics)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Form Callout -->
+              <div style="background: rgba(168, 85, 247, 0.08); border: 1px dashed rgba(168, 85, 247, 0.4); border-radius: var(--radius-md); padding: 1.5rem;">
+                <h4 style="color: var(--violet-bright); font-size: 1rem; margin-bottom: 0.5rem;">Prefer Using Google Forms?</h4>
+                <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
+                  You can submit your mathematics doubt sheet directly using our dedicated student Google Form.
+                </p>
+                <!-- TEACHER: Replace this link with your Google Form URL -->
+                <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center;">
+                  Open Google Doubt Form ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Doubt & Feedback Form -->
+            <!-- TEACHER: You can connect this form to Formspree, Google Forms, or your email.
+                 To use Formspree, set action="https://formspree.io/f/YOUR_ID" method="POST"
+            -->
+            <div class="contact-form-panel">
+              <h2 style="font-size: 1.5rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Send a Message / Ask a Doubt</h2>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.75rem;">
+                Fill in your details below and your teacher will answer your math query.
+              </p>
+
+              <form id="doubtForm" onsubmit="event.preventDefault(); document.getElementById('formSuccessMsg').style.display = 'block'; this.reset();">
+                <div class="form-group">
+                  <label for="studentName" class="form-label">Student / Parent Name *</label>
+                  <input type="text" id="studentName" name="name" class="form-control" placeholder="e.g. Aarav Sharma" required />
+                </div>
+
+                <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                  <div class="form-group">
+                    <label for="studentEmail" class="form-label">Email Address *</label>
+                    <input type="email" id="studentEmail" name="email" class="form-control" placeholder="aarav@example.com" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="studentClass" class="form-label">Class / Grade *</label>
+                    <select id="studentClass" name="class" class="form-control" required>
+                      <option value="">Select Class</option>
+                      <option value="class8">Class 8</option>
+                      <option value="class9">Class 9</option>
+                      <option value="class10">Class 10 (Board Exam)</option>
+                      <option value="parent">Parent Inquiry</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="doubtTopic" class="form-label">Chapter / Topic Subject *</label>
+                  <input type="text" id="doubtTopic" name="topic" class="form-control" placeholder="e.g. Chapter 6 Triangles BPT Proof doubt" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="doubtMessage" class="form-label">Your Question or Message *</label>
+                  <textarea id="doubtMessage" name="message" rows="5" class="form-control" placeholder="Describe the problem, equation, or question you need help with..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem;">
+                  Send Question to Teacher 🚀
+                </button>
+
+                <!-- Success notification box -->
+                <div id="formSuccessMsg" style="display: none; margin-top: 1.25rem; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; border-radius: var(--radius-sm); padding: 1rem; text-align: center;">
+                  <strong style="color: #34d399;">✓ Message Received!</strong>
+                  <p style="color: #e2e8f0; font-size: 0.88rem; margin: 0.25rem 0 0;">
+                    Thank you! Your teacher will review your math question and get back to your email shortly.
+                  </p>
+                </div>
+              </form>
+            </div>
+
           </div>
         </div>
-        <div style="margin-bottom: 1rem;">
-          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Email Address</label>
-          <input type="email" required placeholder="name@example.com" style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;">
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding: 0;">
+          <div>&copy; 2026 NeoMath.in — Student Support</div>
+          <div><a href="index.html">← Return to Home</a> | <a href="youtube.html">YouTube</a></div>
         </div>
-        <div style="margin-bottom: 1.5rem;">
-          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px;">Your Doubt or Message</label>
-          <textarea rows="4" required placeholder="Mention chapter, problem statement, or your question..." style="width: 100%; padding: 10px; border: 1px solid var(--slate-200); border-radius: 6px;"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-      </form>
-    </div>
-  </main>
-</body>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

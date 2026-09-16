@@ -1,0 +1,6 @@
+{
+  "name": "NeoMath.in",
+  "description": "Modern educational mathematics website for Classes 8, 9, and 10 featuring CBSE chapter notes, video lessons, blogs, and e-books.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
