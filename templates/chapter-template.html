@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      ==========================================================================
+      NEOMATH.IN — CHAPTER NOTES & FORMULAS TEMPLATE
+      ==========================================================================
+      HOW TO USE THIS TEMPLATE:
+      1. Copy this file into your target class folder:
+         - For Class 8: copy to /class8/ (e.g. /class8/ch03-quadrilaterals.html)
+         - For Class 9: copy to /class9/ (e.g. /class9/ch01-number-systems.html)
+         - For Class 10: copy to /class10/ (e.g. /class10/ch08-trigonometry.html)
+      2. In the copied file:
+         - Update <title> and <meta name="description"> below.
+         - Replace all placeholder markers like {{CHAPTER_NUMBER}}, {{CHAPTER_TITLE}}, etc.
+         - Add your formulas, concept explanations, and solved NCERT examples.
+      3. In your class index file (e.g. /class8/index.html), find the corresponding
+         chapter card and change the link:
+         href="ch03-quadrilaterals.html"
+      4. Done! It automatically inherits all NeoMath dark/light styling and responsiveness.
+      ==========================================================================
+    -->
+    <title>Class {{CLASS_NUM}} Chapter {{CHAPTER_NUM}}: {{CHAPTER_TITLE}} — Notes & Solutions | NeoMath.in</title>
+    <meta name="description" content="CBSE Class {{CLASS_NUM}} Chapter {{CHAPTER_NUM}} {{CHAPTER_TITLE}} comprehensive notes, formulas, properties, and solved NCERT exemplar questions." />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-logo">
+          <div class="logo-symbol">π</div>
+          <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../class8/index.html" class="nav-link">Class 8</a></li>
+            <li><a href="../class9/index.html" class="nav-link">Class 9</a></li>
+            <li><a href="../class10/index.html" class="nav-link">Class 10</a></li>
+            <li><a href="../youtube.html" class="nav-link">YouTube</a></li>
+            <li><a href="../blogs/index.html" class="nav-link">Blogs</a></li>
+            <li><a href="../ebooks.html" class="nav-link">E-Books</a></li>
+            <li><a href="../contact.html" class="nav-link nav-cta">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer" id="mobileNavDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="../index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+          <li><a href="../class8/index.html" class="mobile-nav-link">Class 8 Mathematics <span>→</span></a></li>
+          <li><a href="../class9/index.html" class="mobile-nav-link">Class 9 Mathematics <span>→</span></a></li>
+          <li><a href="../class10/index.html" class="mobile-nav-link">Class 10 Mathematics <span>→</span></a></li>
+          <li><a href="../youtube.html" class="mobile-nav-link">YouTube Video Classes <span>→</span></a></li>
+          <li><a href="../blogs/index.html" class="mobile-nav-link">Math Blogs & Tips <span>→</span></a></li>
+          <li><a href="../ebooks.html" class="mobile-nav-link">Revision E-Books (PDF) <span>→</span></a></li>
+          <li><a href="../contact.html" class="mobile-nav-link">Contact Teacher / Ask Doubts <span>→</span></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- TOP ACTION BAR -->
+      <div style="padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <!-- Links back to the class hub -->
+        <a href="index.html" class="btn btn-secondary btn-sm">
+          ← Return to Class {{CLASS_NUM}} All Chapters
+        </a>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="../ebooks.html#class{{CLASS_NUM}}" class="btn btn-primary btn-sm">Download E-Book (PDF) 📥</a>
+          <!-- Replace with your actual YouTube lecture link -->
+          <a href="https://www.youtube.com/@neomath" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Watch Video Lecture ↗</a>
+        </div>
+      </div>
+
+      <!-- READING WRAPPER (High contrast, clean light surface for equations and proofs) -->
+      <article class="reading-wrapper" style="margin-top: 2rem; margin-bottom: 5rem;">
+        <!-- Header Info -->
+        <div style="border-bottom: 2px solid var(--border-light); padding-bottom: 1.5rem; margin-bottom: 2rem;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+            <span class="chapter-badge-type" style="background: #e0f2fe; color: #0284c7; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 600; font-size: 0.8rem;">
+              CBSE Class {{CLASS_NUM}}
+            </span>
+            <span class="chapter-badge-type" style="background: #f3e8ff; color: #7e22ce; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 600; font-size: 0.8rem;">
+              Chapter {{CHAPTER_NUM}}
+            </span>
+            <span class="chapter-badge-type" style="background: #dcfce7; color: #15803d; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 600; font-size: 0.8rem;">
+              NCERT Aligned
+            </span>
+          </div>
+          
+          <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--text-light-dark); line-height: 1.25; margin-bottom: 0.5rem;">
+            {{CHAPTER_TITLE}}
+          </h1>
+          <p style="color: var(--text-light-muted); font-size: 1.05rem;">
+            Complete concept breakdowns, foundational theorems, algebraic identities, and step-by-step solved NCERT examples.
+          </p>
+        </div>
+
+        <!-- QUICK REVISION FORMULA BOX -->
+        <div class="formula-box">
+          <div class="formula-title">⚡ Quick Revision Formula Cheat-Sheet</div>
+          <p style="margin-bottom: 1rem; color: #334155; font-size: 0.95rem;">
+            Memorize and understand these core mathematical relationships before solving exercise problems:
+          </p>
+          <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.6rem; color: #0f172a; font-weight: 600;">
+            <li style="padding: 0.5rem 0.75rem; background: white; border-radius: 6px; border-left: 4px solid var(--cyan-dark);">
+              Formula 1: <span style="font-family: 'Times New Roman', Times, serif; font-size: 1.15rem; color: #0369a1;">[Insert primary formula here]</span>
+            </li>
+            <li style="padding: 0.5rem 0.75rem; background: white; border-radius: 6px; border-left: 4px solid var(--violet);">
+              Formula 2: <span style="font-family: 'Times New Roman', Times, serif; font-size: 1.15rem; color: #6b21a8;">[Insert secondary identity or relation here]</span>
+            </li>
+            <li style="padding: 0.5rem 0.75rem; background: white; border-radius: 6px; border-left: 4px solid #10b981;">
+              Condition / Note: <span style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem; color: #047857;">[Insert key restriction, e.g. denominator ≠ 0]</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SECTION 1: CORE CONCEPT DEFINITION -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-light-dark); margin-bottom: 1rem; border-left: 4px solid #0284c7; padding-left: 0.75rem;">
+            1. Understanding the Core Concept
+          </h2>
+          <p style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.7; color: #334155;">
+            Write an intuitive explanation of the topic here. Why does this concept exist? How does it connect to concepts learned in previous chapters or classes?
+          </p>
+
+          <div class="math-proof" style="margin: 1.5rem 0;">
+            <div style="font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Definition / Mathematical Property:</div>
+            <p style="font-style: italic; color: #334155; margin-bottom: 0.5rem;">
+              "State the exact NCERT textbook definition or theorem here in clear mathematical language."
+            </p>
+            <div style="background: white; padding: 0.75rem 1rem; border-radius: 6px; border: 1px dashed #cbd5e1; font-family: 'Times New Roman', serif; font-size: 1.15rem; color: #0f172a;">
+              Mathematical Expression: a + b = b + a
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: STEP-BY-STEP WORKED EXAMPLES -->
+        <section style="margin-bottom: 3rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-light-dark); margin-bottom: 1rem; border-left: 4px solid #7e22ce; padding-left: 0.75rem;">
+            2. Solved NCERT Exemplar Problems
+          </h2>
+          <p style="margin-bottom: 1.5rem; color: #334155;">
+            Step-by-step methods showing exactly how students should format their answers in board or term examinations:
+          </p>
+
+          <!-- Problem 1 -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+              <span style="font-weight: 700; color: #0f172a;">Question 1 (Frequently Asked in Exams)</span>
+              <span style="background: #dbeafe; color: #1e40af; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600;">3 Marks</span>
+            </div>
+            <p style="font-weight: 600; color: #1e293b; margin-bottom: 1rem;">
+              [Write the exam problem question statement here]
+            </p>
+
+            <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; border: 1px solid #e2e8f0;">
+              <div style="font-weight: 700; color: #10b981; font-size: 0.9rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Step-by-Step Solution:</div>
+              <p style="color: #334155; margin-bottom: 0.5rem;"><strong>Step 1:</strong> Identify what is given and what needs to be determined.</p>
+              <p style="color: #334155; margin-bottom: 0.5rem;"><strong>Step 2:</strong> Apply the standard formula or algebraic identity.</p>
+              <p style="color: #334155; margin-bottom: 0.5rem;"><strong>Step 3:</strong> Perform algebraic simplification.</p>
+              <div style="margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #ecfdf5; border-radius: 6px; color: #065f46; font-weight: 700;">
+                Final Answer: [Insert final result with units]
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: TEACHER PRO-TIP / COMMON PITFALLS -->
+        <section style="margin-bottom: 2rem;">
+          <div style="background: #fffbeb; border: 1px solid #fef3c7; border-left: 6px solid #f59e0b; border-radius: 8px; padding: 1.25rem 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.25rem;">💡</span>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: #92400e; margin: 0;">Teacher's Pro-Tip for Exams</h3>
+            </div>
+            <p style="color: #78350f; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+              Point out the most common mistake students make in this chapter (e.g. sign errors, forgetting the ± sign when taking square roots, or not writing the concluding statement).
+            </p>
+          </div>
+        </section>
+
+        <!-- Chapter Footer / Next Chapter Navigation -->
+        <div style="border-top: 2px solid var(--border-light); padding-top: 1.5rem; margin-top: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <a href="index.html" class="btn btn-secondary btn-sm">← Back to Class {{CLASS_NUM}} Overview</a>
+          <a href="../contact.html" class="btn btn-primary btn-sm">Have a doubt? Ask the Teacher 💬</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-bottom" style="border: none; padding-top: 0;">
+        <p>© 2026 NeoMath.in — Conceptual Mathematics for CBSE Classes 8, 9 & 10.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="index.html">Class {{CLASS_NUM}} Hub</a>
+          <a href="../ebooks.html">E-Books</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

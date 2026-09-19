@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      ==========================================================================
+      NEOMATH.IN — BLOG ARTICLE TEMPLATE
+      ==========================================================================
+      HOW TO USE THIS TEMPLATE:
+      1. Copy this file into the /blogs/ folder:
+         e.g. /blogs/blog-exam-revision-tips.html
+      2. In the copied file:
+         - Update <title> and <meta name="description">.
+         - Replace placeholders like {{BLOG_TITLE}}, {{READ_TIME}}, {{DATE}}, etc.
+         - Write your article sections, visual tips, and examples.
+      3. In /blogs/index.html:
+         - Duplicate one of the article cards and point its link to your new file:
+           href="blog-exam-revision-tips.html"
+      4. Done! All NeoMath styling, header, mobile menu & reading surfaces work automatically.
+      ==========================================================================
+    -->
+    <title>{{BLOG_TITLE}} | NeoMath.in Math Journal</title>
+    <meta name="description" content="{{BLOG_META_DESCRIPTION}}" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-logo">
+          <div class="logo-symbol">π</div>
+          <span class="brand-text">NeoMath<span class="brand-tld">.in</span></span>
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../class8/index.html" class="nav-link">Class 8</a></li>
+            <li><a href="../class9/index.html" class="nav-link">Class 9</a></li>
+            <li><a href="../class10/index.html" class="nav-link">Class 10</a></li>
+            <li><a href="../youtube.html" class="nav-link">YouTube</a></li>
+            <li><a href="../blogs/index.html" class="nav-link active">Blogs</a></li>
+            <li><a href="../ebooks.html" class="nav-link">E-Books</a></li>
+            <li><a href="../contact.html" class="nav-link nav-cta">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer" id="mobileNavDrawer">
+        <ul class="mobile-nav-list">
+          <li><a href="../index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+          <li><a href="../class8/index.html" class="mobile-nav-link">Class 8 Mathematics <span>→</span></a></li>
+          <li><a href="../class9/index.html" class="mobile-nav-link">Class 9 Mathematics <span>→</span></a></li>
+          <li><a href="../class10/index.html" class="mobile-nav-link">Class 10 Mathematics <span>→</span></a></li>
+          <li><a href="../youtube.html" class="mobile-nav-link">YouTube Video Classes <span>→</span></a></li>
+          <li><a href="../blogs/index.html" class="mobile-nav-link active">Math Blogs & Tips <span>→</span></a></li>
+          <li><a href="../ebooks.html" class="mobile-nav-link">Revision E-Books (PDF) <span>→</span></a></li>
+          <li><a href="../contact.html" class="mobile-nav-link">Contact Teacher / Ask Doubts <span>→</span></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Return Bar -->
+      <div style="padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <a href="index.html" class="btn btn-secondary btn-sm">
+          ← Return to All Blog Articles
+        </a>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="../ebooks.html" class="btn btn-primary btn-sm">Browse E-Books (PDF) 📥</a>
+        </div>
+      </div>
+
+      <!-- READING WRAPPER -->
+      <article class="reading-wrapper" style="margin-top: 2rem; margin-bottom: 5rem;">
+        <!-- Article Header -->
+        <header style="border-bottom: 2px solid var(--border-light); padding-bottom: 1.5rem; margin-bottom: 2rem;">
+          <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap;">
+            <span style="background: #e0f2fe; color: #0284c7; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 700; font-size: 0.8rem;">
+              {{CATEGORY}}
+            </span>
+            <span style="color: var(--text-light-muted); font-size: 0.85rem;">• {{PUBLISH_DATE}}</span>
+            <span style="color: var(--text-light-muted); font-size: 0.85rem;">• ⏱ {{READ_TIME}} min read</span>
+          </div>
+
+          <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--text-light-dark); line-height: 1.25; margin-bottom: 0.75rem;">
+            {{BLOG_TITLE}}
+          </h1>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 1rem;">
+            <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--cyan), var(--violet)); display: flex; align-items: center; justify-content: center; color: #070c18; font-weight: 800; font-size: 0.9rem;">
+              NM
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--text-light-dark); font-size: 0.9rem;">By NeoMath Teacher</div>
+              <div style="color: var(--text-light-muted); font-size: 0.75rem;">CBSE Mathematics Specialist</div>
+            </div>
+          </div>
+        </header>
+
+        <!-- LEAD PARAGRAPH -->
+        <p style="font-size: 1.15rem; line-height: 1.75; color: #1e293b; font-weight: 500; margin-bottom: 2rem;">
+          {{LEAD_PARAGRAPH}} (Start with an engaging hook: why do students struggle with this, and what quick insight will transform their perspective today?)
+        </p>
+
+        <!-- KEY TAKEAWAY BOX -->
+        <div class="formula-box">
+          <div class="formula-title">✨ Key Insight & Executive Summary</div>
+          <p style="margin-bottom: 0.5rem; color: #334155; font-size: 0.95rem;">
+            Before diving into the details, remember this core mental model:
+          </p>
+          <div style="background: white; padding: 1rem; border-radius: 8px; border-left: 4px solid var(--cyan-dark); font-weight: 600; color: #0f172a;">
+            "{{MAIN_INSIGHT_QUOTE}}"
+          </div>
+        </div>
+
+        <!-- SECTION 1 -->
+        <section style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-light-dark); margin-bottom: 1rem; border-left: 4px solid #0284c7; padding-left: 0.75rem;">
+            1. {{SECTION_1_TITLE}}
+          </h2>
+          <p style="margin-bottom: 1rem; font-size: 1.05rem; line-height: 1.7; color: #334155;">
+            Write your main discussion here. Use clear analogies, visual geometry intuition, and bullet points wherever helpful.
+          </p>
+          <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #334155; line-height: 1.7;">
+            <li><strong>Key Point A:</strong> Explanation of first sub-concept.</li>
+            <li><strong>Key Point B:</strong> Explanation of second sub-concept.</li>
+            <li><strong>Key Point C:</strong> How to avoid the most common trap.</li>
+          </ul>
+        </section>
+
+        <!-- SECTION 2: VISUAL PROOF OR WORKED EXAMPLE -->
+        <section style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-light-dark); margin-bottom: 1rem; border-left: 4px solid #7e22ce; padding-left: 0.75rem;">
+            2. Step-by-Step Walkthrough
+          </h2>
+          <div class="math-proof">
+            <div style="font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">The Step-by-Step Logic:</div>
+            <p style="color: #334155; margin-bottom: 0.5rem;">
+              Walk through an equation or study routine step-by-step:
+            </p>
+            <div style="background: white; padding: 0.75rem 1rem; border-radius: 6px; border: 1px dashed #cbd5e1; font-family: 'Times New Roman', serif; font-size: 1.15rem; color: #0f172a; margin-bottom: 0.5rem;">
+              Step 1 → Step 2 → Conclusion
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: EXAM ACTION PLAN -->
+        <section style="margin-bottom: 2.5rem;">
+          <div style="background: #ecfdf5; border: 1px solid #d1fae5; border-left: 6px solid #10b981; border-radius: 8px; padding: 1.25rem 1.5rem;">
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #065f46; margin: 0 0 0.5rem;">
+              🎯 Actionable Exercise for Today
+            </h3>
+            <p style="color: #047857; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+              Give the student a specific 5-minute action item (e.g. "Take a blank sheet of paper right now and write out this formula from memory").
+            </p>
+          </div>
+        </section>
+
+        <!-- Bottom Return & Share Bar -->
+        <div style="border-top: 2px solid var(--border-light); padding-top: 1.5rem; margin-top: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <a href="index.html" class="btn btn-secondary btn-sm">← Back to All Articles</a>
+          <a href="../contact.html" class="btn btn-primary btn-sm">Ask a Question / Suggest a Topic 💬</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-bottom" style="border: none; padding-top: 0;">
+        <p>© 2026 NeoMath.in — Conceptual Mathematics for CBSE Classes 8, 9 & 10.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="index.html">Blog Hub</a>
+          <a href="../ebooks.html">E-Books</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
